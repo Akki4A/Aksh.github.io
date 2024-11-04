@@ -1,137 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshya Pandey - Software Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/theme.css" id="theme-style">
+	<title>Akki4A</title>
+	<meta name="viewport" content="width=device-width,intial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href=" ">
 </head>
-<body class="theme-dark">
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">AP</div>
-            <div class="nav-links">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <button id="theme-toggle" class="theme-toggle">
-                <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            </button>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm Akshya Pandey</h1>
-                <p class="lead">Senior Software Developer specializing in Java, Spring Boot, and Cloud Technologies</p>
-                <div class="cta-buttons">
-                    <a href="AKSHYA PANDEY EXP3.2.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">Python</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-tags">
-                        <span class="tag">MySQL</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">InfluxDB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="tag">AWS</span>
-                        <span class="tag">Git</span>
-                        <span class="tag">K8s</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/pvda.jpg" alt="PVDA Project" onerror="this.src='https://via.placeholder.com/400x250'">
-                    </div>
-                    <div class="project-content">
-                        <h3>Personal Viewing Data Analyzer</h3>
-                        <p>PVDA tells you how much time users spend watching shows on Netflix.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Data Analysis</span>
-                        </div>
-                        <a href="pvda.html" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-                <!-- More project cards... -->
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-                <div id="status" class="form-status"></div>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/akshya-pandey-b8b5a115b/" target="_blank" class="social-link">LinkedIn</a>
-                <a href="https://twitter.com/akkitough" target="_blank" class="social-link">Twitter</a>
-                <a href="https://www.instagram.com/akkiii____/" target="_blank" class="social-link">Instagram</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/theme.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/form.js"></script>
+<body>
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm Akshya Pandey</h1>
+			</div>
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
+					<div class="dot-wrapper">
+						<div id="dot-1" class="browser-dot"></div>
+						<div id="dot-2" class="browser-dot"></div>
+						<div id="dot-3" class="browser-dot"></div>
+					</div>
+					<ul id="navigation">
+						<li><a target="_blank" href="AKSHYA PANDEY EXP3.2.pdf">Contact</a></li>
+					</ul>
+				</div>
+				<div class="left-column">
+					<img id= "profile_pic" src="images/AKSHYA PANDEY.JPG">
+					<h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+					</div>
+					<p id="settings-note">*Theme setting will be saved for<br>your next visit</p>
+				</div>
+				<div class="right-column">
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I Am Passionate About</h3>
+							<p>I love to code since it makes a difference in people's lives.
+							 Solving problems through programming and elegant design, it's beautiful when done right.</p>
+							<div id="corner-bl" class="corner"></div>
+							<div id="corner-br" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="s2">
+		<div class="main-container">
+			<div class="about-wrapper">
+				<div class="about me">
+					<h4>More about me</h4>
+					<p>Having excellent communication and negotiating skills with excellent social compatibility, quick to grasp new ideas, and easily adaptable to the new environment.</p> 
+					<p>Possess abilities to drive, support & sustain a positive work environment. Driven towards growth. Looking for Transition into IT industry. Positive attitude is all i am build upon. Hardworking and willing to give my 100%.</p>
+					<hr>
+					<h5>Tech Stack</h5>
+					<p>Developer with primary focus on Backend Technolgies. <a target="_blank" href="AKSHYA PANDEY EXP3.2.pdf">Download Resume</a></p>
+					<div id="skills">
+						<ul>
+							<li>J2EE</li>
+							<li>MySQL</li>
+							<li>MongoDB</li>
+							<li>SpringBoot</li>
+							<li>AWS</li>
+							
+						</ul>
+						<ul>
+							<li>JavaScript</li>
+							<li>HTML/CSS</li>
+							<li>Git</li>
+							<li>K8s</li>
+						</ul>
+					</div>
+				</div>
+				<div class="social-links">
+					<img id="social_img" src="images/follow.jpg">
+					<h3>Find me on LinkedIn, Twitter and Instagram</h3>
+					<a target="_blank" href="https://www.linkedin.com/in/akshya-pandey-b8b5a115b/">LinkedIn: Akshya Pandey</a>
+					<br>
+					<a target="_blank" href="https://twitter.com/akkitough">Twitter: @akkitough</a>
+					<br>
+					<a target="_blank" href="https://www.instagram.com/akkiii____/">Instagram: @akkiii____</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">Some of my projects</h3>
+			<div class="post-wrapper">
+				<div>
+					<div class="post">
+						<img class= "thumbnail" src="images/pvda.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Personal Viewing Data Analyzer</h6>
+							<p class="post-intro">PVDA, tells you, how much time does user take to watch a certain show on Netflix.</p>
+							<a href="pvda.html">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="post">
+						<img class= "thumbnail" src="images/dcb.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Database Collection System</h6>
+							<p class="post-intro">It is Spring Boot Application, which performs CRUD operations.</p>
+							<a target="_blank" href="https://github.com/Akki4A/Console-Based-Applications">Source code</a>
+						</div>
+						
+					</div>
+				</div>
+				<div>
+					<div class="post">
+						<img class= "thumbnail" src="images/calc.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Simple Calculator</h6>
+							<p class="post-intro">It is a GUI (graphical user interface) application, which performs simple calculations. </p>
+							<a target="_blank" href="https://github.com/Akki4A/A-Simple-Calculator">Source code</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="s2">
+		<div class="main-container">
+			<h3 style="text-align: center;">Get In Touch</h3>
+			<form action="https://formspree.io/f/mrgojwzj" method="POST" id="contact-form">
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+				<input id="submit-btn" type="submit" value="Send">
+				
+			</form>
+			<div id="status"></div>
+		</div>
+		
+	</section>
+	<script type="text/javascript" src="submission.js"></script>
+	<script type="text/javascript" src="themeChanger.js"></script>
 </body>
 </html>
