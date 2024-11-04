@@ -1,0 +1,259 @@
+:root {
+    /* Light theme */
+    --light-bg: #ffffff;
+    --light-text: #1a1a1a;
+    --light-primary: #2563eb;
+    --light-secondary: #4b5563;
+    --light-accent: #3b82f6;
+    --light-card-bg: #f3f4f6;
+    --light-input-bg: #ffffff;
+    --light-border: #e5e7eb;
+
+    /* Dark theme */
+    --dark-bg: #0f172a;
+    --dark-text: #f3f4f6;
+    --dark-primary: #3b82f6;
+    --dark-secondary: #9ca3af;
+    --dark-accent: #60a5fa;
+    --dark-card-bg: #1e293b;
+    --dark-input-bg: #1f2937;
+    --dark-border: #2d3748;
+
+    /* Common */
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-category {
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    transition: var(--transition);
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+/* Contact Form */
+.contact {
+    padding: 6rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--dark-border);
+    transition: var(--transition);
+}
+
+.form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--dark-primary);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--dark-border);
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Form validation styles */
+.form-control.valid {
+    border-color: #10b981;
+}
+
+.form-control.invalid {
+    border-color: #ef4444;
+}
+
+.validation-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.form-status {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.form-status.success {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.form-status.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Floating label animation */
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 0.75rem;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.form-group label.float {
+    transform: translateY(-1.5rem) scale(0.85);
+    opacity: 1;
+}

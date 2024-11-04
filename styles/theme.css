@@ -1,0 +1,78 @@
+/* Light Theme */
+.theme-light {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+.theme-light .navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid var(--light-border);
+}
+
+.theme-light .nav-link {
+    color: var(--light-secondary);
+}
+
+.theme-light .nav-link:hover,
+.theme-light .nav-link.active {
+    color: var(--light-primary);
+}
+
+.theme-light .skill-category {
+    background-color: var(--light-card-bg);
+    box-shadow: var(--shadow);
+}
+
+.theme-light .tag {
+    background-color: var(--light-primary);
+    color: white;
+}
+
+.theme-light .project-card {
+    background-color: var(--light-card-bg);
+    box-shadow: var(--shadow);
+}
+
+.theme-light .form-control {
+    background-color: var(--light-input-bg);
+    color: var(--light-text);
+}
+
+/* Dark Theme */
+.theme-dark {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.theme-dark .navbar {
+    background-color: rgba(15, 23, 42, 0.8);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.theme-dark .nav-link {
+    color: var(--dark-secondary);
+}
+
+.theme-dark .nav-link:hover,
+.theme-dark .nav-link.active {
+    color: var(--dark-primary);
+}
+
+.theme-dark .skill-category {
+    background-color: var(--dark-card-bg);
+}
+
+.theme-dark .tag {
+    background-color: var(--dark-primary);
+    color: white;
+}
+
+.theme-dark .project-card {
+    background-color: var(--dark-card-bg);
+}
+
+.theme-dark .form-control {
+    background-color: var(--dark-input-bg);
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+}
